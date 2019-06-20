@@ -36,23 +36,25 @@
                 </div>
               </nav>
     <body class="bodyBG" onload="previousDecrement()">
-
+      
       <div class="container-fluid">
-      <div class="row ">
-          <button onclick="previousDecrement()" type="button" class="myBtn btn btn-primary">Left</button>
-          <div class="col" id="slot1">
+      <div class=" row justify-content-center">
+          
+              <button onclick="previousDecrement()" type="button" class="myLeftBtn btn btn-primary">Left</button>
+        
+          <div class="col-lg-2 col-md-2 col-sm-12" id="slot1">
             first
           </div>
-          <div class="col" id="slot2">
+          <div class="col-lg-2 col-md-2" id="slot2">
             second
           </div>
-          <div class="col" id="slot3">
+          <div class="col-lg-2 col-md-2" id="slot3">
             third
-          </div>        
-          <button onclick="nextIncrement()" type="button" class="btn btn-primary">Right</button>
-        </div>
+          </div>       
+          <button onclick="nextIncrement()" type="button" class="myRightButton btn btn-primary">Right</button>
+          </div>
+        
       </div>
-
       
             <script src="../javascript/carousel.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
