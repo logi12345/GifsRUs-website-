@@ -1,0 +1,39 @@
+[
+    {
+        "question": "What is your prefered colour?",
+        "answers": [
+            {"value": "lana", "label": "Yellow"},
+            {"value": "mondeo", "label": "Blue"},
+            {"value": "bmw", "label": "Black"},
+            {"value": "ferarri", "label": "Red"}
+        ]
+        
+    },
+    {
+        "question": "What is your prefered holday?",
+        "answers": [
+            {"value": "lana", "label": "Camping"},
+            {"value": "mondeo", "label": "City Trip"},
+            {"value": "bmw", "label": "Beach"},
+            {"value": "ferarri", "label": "Skiing"}
+        ]  
+    },
+    {
+        "question": "Which was most recently visited?",
+        "answers": [
+            {"value": "lana", "label": "Asda"},
+            {"value": "mondeo", "label": "Sainsbury's"},
+            {"value": "bmw", "label": "Tesco"},
+            {"value": "ferarri", "label": "Waitrose"}
+        ]
+    },
+    {
+        "question": "Which do you prefer?",
+        "answers": [
+            {"value": "lana", "label": "Gaming"},
+            {"value": "mondeo", "label": "Cinema"},
+            {"value": "bmw", "label": "Extreme Sports"},
+            {"value": "ferarri", "label": "Library"}
+        ]
+    }
+]

@@ -1,12 +1,28 @@
 
-let myGifs = [
-    "https://media.giphy.com/media/xZqycRHIQkKNa/giphy.gif",
-    "https://media.giphy.com/media/dJtoGmnupA00QaJitW/giphy.gif",
-    "https://media.giphy.com/media/3E2Qd5tJ8Nke7E25GE/giphy.gif",
-    "https://media.giphy.com/media/lwbovkqQ5af12maG0A/giphy.gif",
-    "https://media.giphy.com/media/1Bcf6V09JinAs7Xou3/giphy.gif",
-]
+let myGifs = []
 
+let noImages = 5;
+api =() =>{
+const request = new Request('http://api.giphy.com/v1/gifs/trending?api_key=JqYOPDtN0pje41qNgnN1xAgrjkRC5X3t&limit=5');
+fetch(request)
+  .then(response => {
+    if (response.status === 200) {
+        const x =response.json();
+      return x;
+    } else {
+      throw new Error('Something went wrong on api server!');
+    }
+  })
+  .then(function(response) {
+      for(let i=0; i<noImages; ++i){      
+        myGifs.push("https://media.giphy.com/media/"+response.data[i].id+"/giphy.gif");
+      }
+      previousDecrement();
+    
+  }).catch(error => {
+    console.error(error);
+  });
+}
 
 let first =0;
 let second =1;
