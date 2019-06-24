@@ -25,7 +25,7 @@ $(document).ready(function(){
     });
 
 
-    $(document).on("click","#thing", function(){
-        $(this).parent().remove();
+    $(document).on("click","#searchButton", function(e){
+       e.preventDefault()
     });
 });

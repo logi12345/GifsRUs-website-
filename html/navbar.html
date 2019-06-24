@@ -6,20 +6,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li id="landing" class="nav-item">
-              <a class="nav-link" href="./index.html">Landing </a>
+            <li id="index" class="nav-item">
+              <a id="poop" class="nav-link" href="./index.html">Landing </a>
             </li>
-            <li id="about" class="nav-item active">
+            <li id="about" class="nav-item">
               <a class="nav-link" href="./about.html">About</a>
             </li>
             <li id="contact" class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
             </li>
+            <li id="quiz" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Quizes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./quiz.html">What car you quiz?</a>
+                </div>
+              </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <form id="search-form" class="form-inline my-2 my-lg-0">
+            <input id="search-field" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+            <input type="submit" class="btn btn-outline-success my-2 my-sm-0"  id="searchButton"></input>
           </form>
         </div>
       </nav>
-      </html>
+    </html>

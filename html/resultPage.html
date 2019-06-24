@@ -4,36 +4,17 @@
     <head>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="../css/index.css">
-            <style>
-                img {
-                 width:inherit;
-                 height:325px;
-                 max-height: 325px;
-               }
-            </style>
     </head>
-    <body class="bodyBG" onload="api()">
+    <body class="bodyBG"  onload="x()">
         <div class="myNav">
 
           </div>
-      <div class="container-fluid">
-      <div class=" row justify-content-center">
-          
-              <button onclick="previousDecrement()" type="button" class="myLeftBtn btn btn-primary">Left</button>
-        
-          <div class="col-lg-3 col-md-3 col-sm-12" id="slot1">
-            first
+        <div class="container-fluid">
+          <div id="resultsImage" class="row justify-content-center">
+
           </div>
-          <div class="col-lg-3 col-md-3" id="slot2">
-            second
-          </div>
-          <div class="col-lg-3 col-md-3" id="slot3">
-            third
-          </div>       
-          <button style=""onclick="nextIncrement()" type="button" class="myRightButton btn btn-primary">Right</button>
-          </div>
-        
-      </div>
+            
+        </div>
       
             <script src="../javascript/carousel.js"></script>
             <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
@@ -41,5 +22,14 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
             <script src="../javascript/search.js"></script>
             <script src="../javascript/navbar.js"></script>
+            <script>
+               const x = ()=>{
+                let pageURL = window.location.href;
+                let id = pageURL.substring(pageURL.lastIndexOf('=') + 1)
+                console.log(id)
+                document.getElementById("resultsImage").innerHTML = "<img src='https://media.giphy.com/media/"+id+"/giphy.gif'>"
+               }
+            
+            </script>
     </body>
 </html>
